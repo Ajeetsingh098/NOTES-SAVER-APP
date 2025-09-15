@@ -46,12 +46,12 @@ const Home = () => {
     }
 
     return (
-        <div className='flex flex-col '>
+        <div className='flex flex-col gap-5  '>
 
 
-            <div className=' '>
+            <div className='flex gap-2 mt-3'>
                 <input
-                    type='text ' placeholder="Enter your title here" className='border-2  rounded-md  p-2.5  text-center bg-white text-black'
+                    type='text ' placeholder="Enter your title here" className='border-1  rounded-md  p-2  text-center bg-white text-black'
                     value={title}
                     onChange={(e) => setTile(e.target.value)}
                 >
@@ -59,7 +59,7 @@ const Home = () => {
                 <button
 
                     onClick={Createyournotes}
-                    className='border-2 border-gray-400 rounded-md  m-5  text-center p-2 bg-blue-400 text-white font-bold cursor-pointer'>
+                    className='border-1 border-gray-400 rounded-md    text-center p-2 bg-blue-400 text-white font-bold cursor-pointer'>
                     {
                         PastedId ? "Update your notes" : "Create new notes"
 
@@ -69,7 +69,7 @@ const Home = () => {
 
             <div>
                 <textarea
-                    className='border-2 border-gray-400 rounded-md p-5 text-center min-w-[100%] h-[300px]  bg-white text-black'
+                    className='border-1 border-gray-400 rounded-md p-4  ml-5 text-center min-w-[90%] h-[300px]  bg-white text-black'
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     placeholder="Write your notes here...."
