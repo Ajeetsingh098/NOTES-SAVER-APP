@@ -37,7 +37,7 @@ const Notes = () => {
 
 
   return (
-    <div className='text-white' >
+    <div className='text-white p-2' >
       <input
         className='p-2 mt-5 border-1 rounded-xl min-w-[90%] ml-5 bg-white text-black'
         type='search'
@@ -47,7 +47,7 @@ const Notes = () => {
       >
       </input>
 
-      <div className='flex flex-col  gap-4 min-w-[80%]   '>
+      <div className='flex flex-col  gap-2 min-w-[80%]   '>
 
         {
 
@@ -56,7 +56,7 @@ const Notes = () => {
             return (
               <div
                 key={paste?._id}
-                className='flex flex-col gap-5 border mt-5 text-center  rounded-xl  bg-gray-700 '>
+                className='flex flex-col gap-5 border mt-5 text-center p-5 rounded-xl  bg-gray-700 '>
 
                 <div className='font-bold '>
                   {paste.title}
@@ -64,7 +64,7 @@ const Notes = () => {
                 <div className='border p-2 bg-white text-black'>
                   {paste.content}
                 </div>
-                <div className='flex flex-row  place-content-evenly '>
+                <div className='flex flex-row  gap-2 mt-5 place-content-evenly '>
                   <button
                     className='border p-1 rounded cursor-pointer'>
                     <a href={`/?pasteId=${paste?._id}`}
