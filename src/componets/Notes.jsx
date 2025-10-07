@@ -24,7 +24,7 @@ const Notes = () => {
         await navigator.share({
           title: 'My Notes App',
           text: 'Check out this cool note I made!',
-          url: window.location.href, // current page ka link share hoga
+          url: window.location.href, 
         });
         console.log("Shared successfully");
       } catch (error) {
